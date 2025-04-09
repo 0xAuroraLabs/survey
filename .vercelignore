@@ -1,0 +1,6 @@
+.firebase/
+firebase.json
+firestore.rules
+firestore.indexes.json
+.env.local
+.vercel.env 

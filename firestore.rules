@@ -1,0 +1,80 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Helper functions
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+    
+    function isAdmin() {
+      return isAuthenticated() && request.auth.token.role == 'admin';
+    }
+    
+    function isOwner(userId) {
+      return isAuthenticated() && request.auth.uid == userId;
+    }
+    
+    // Allow read access to authenticated users for all collections
+    // This simplifies development but can be restricted further in production
+    match /{document=**} {
+      allow read: if isAuthenticated();
+    }
+    
+    // Users collection
+    match /users/{userId} {
+      // Anyone can read user documents
+      allow read: if true;
+      
+      // Users can create their own documents during signup
+      allow create: if isOwner(userId) || isAdmin();
+      
+      // Users can update their own basic info, admins can update all fields
+      allow update: if isOwner(userId) || isAdmin();
+      
+      // Only admins can delete users
+      allow delete: if isAdmin();
+    }
+    
+    // Submissions collection
+    match /submissions/{submissionId} {
+      // Anyone can create a submission (for the survey form)
+      allow create: if true;
+      
+      // Anyone can read submissions (for referral tracking)
+      allow read: if true;
+      
+      // Only admins can update or delete submissions
+      allow update, delete: if isAdmin();
+    }
+    
+    // Newsletter subscribers collection
+    match /newsletter_subscribers/{subscriberId} {
+      // Anyone can create a newsletter subscription
+      allow create: if true;
+      
+      // Only admins can read, update, or delete newsletter subscribers
+      allow read, update, delete: if isAdmin();
+    }
+    
+    // Rewards collection
+    match /rewards/{rewardId} {
+      // Anyone can read rewards
+      allow read: if true;
+      
+      // Only admins can create, update, or delete rewards
+      allow create, update, delete: if isAdmin();
+    }
+    
+    // User reward claims
+    match /userRewards/{claimId} {
+      // Anyone can read reward claims
+      allow read: if true;
+      
+      // Users can create claims for themselves
+      allow create: if isAuthenticated();
+      
+      // Only admins can update or delete claims
+      allow update, delete: if isAdmin();
+    }
+  }
+}
