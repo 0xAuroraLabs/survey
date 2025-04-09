@@ -4,9 +4,11 @@
 /node_modules
 /.pnp
 .pnp.js
+.pnpm-store/
 
 # testing
 /coverage
+/.nyc_output
 
 # next.js
 /.next/
@@ -14,10 +16,16 @@
 
 # production
 /build
+/dist
 
 # misc
 .DS_Store
 *.pem
+Thumbs.db
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
 
 # debug
 npm-debug.log*
@@ -26,10 +34,16 @@ yarn-error.log*
 .pnpm-debug.log*
 
 # local env files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 .env*.local
+.vercel.env
 
 # vercel
-.vercel
+.vercel/
 
 # typescript
 *.tsbuildinfo
@@ -37,22 +51,42 @@ next-env.d.ts
 
 # Firebase
 /.firebase/
+.firebase/**/*
 firebase-debug.log
+firebase-debug.*.log
+ui-debug.log
 .firebase-emulator-data/
+firestore-debug.log
+.runtimeconfig.json
 
-# Build caches
+# Next.js and Build caches
+**/.next/
 **/.next/cache/
+**/.next/cache/webpack/
+**/.next/cache/webpack/**/*
 **/webpack/
 **/cache/
 **/*.pack
-
-# Vercel
-.vercel
-.env*.local
-.vercel.env
+.swc/
 
 # Build artifacts
 out/
 
-.next/
-.firebase/
+# Sentry
+.sentryclirc
+
+# logs
+logs
+*.log
+
+# Compiled output
+dist/
+tmp/
+out-tsc/
+
+# Package-specific
+.eslintcache
+.eslintrc.js
+.stylelintrc
+.stylelintcache
+# package-lock.json
