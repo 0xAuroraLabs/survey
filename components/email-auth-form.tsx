@@ -159,7 +159,7 @@ export function EmailAuthForm() {
 
       toast({
         title: "Account created successfully",
-        description: "Welcome to Aurora Labs!",
+        description: "Welcome to Auroral Labs!",
       })
 
       router.push("/dashboard")

@@ -13,8 +13,8 @@ export default function Home() {
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between">
           <div className="flex items-center gap-2">
-            <Image src="/images/without-bg.png" alt="Aurora Labs Logo" width={40} height={40} />
-            <span className="text-xl font-bold text-aurora">Aurora Labs</span>
+            <Image src="/images/without-bg.png" alt="Auroral Labs Logo" width={40} height={40} />
+            <span className="text-xl font-bold text-aurora">Auroral Labs</span>
           </div>
           <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
             <Link href="/#features" className="transition-colors hover:text-aurora">
@@ -57,7 +57,7 @@ export default function Home() {
                   Enhancing Pet Lives Through Technology
                 </h1>
                 <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                  At Aurora Labs, we're dedicated to revolutionizing pet care with smart, user-friendly technology.
+                  At Auroral Labs, we're dedicated to revolutionizing pet care with smart, user-friendly technology.
                   Join our referral program and help shape the future of pet care.
                 </p>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -154,9 +154,9 @@ export default function Home() {
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
               <div className="space-y-4">
                 <div className="inline-block rounded-lg bg-aurora px-3 py-1 text-sm text-white">About Us</div>
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Aurora Labs</h2>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Auroral Labs</h2>
                 <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                  Aurora Labs is a forward-thinking startup committed to revolutionizing pet care with smart,
+                  Auroral Labs is a forward-thinking startup committed to revolutionizing pet care with smart,
                   user-friendly technology. Our mission is to develop intelligent pet devices that ensure the
                   well-being, safety, and happiness of your pets.
                 </p>
@@ -174,7 +174,7 @@ export default function Home() {
                 <div className="aspect-square overflow-hidden rounded-xl bg-gray-100 shadow-lg">
                   <Image
                     src="/images/without-bg.png"
-                    alt="Aurora Labs Logo"
+                    alt="Auroral Labs Logo"
                     width={500}
                     height={500}
                     className="object-contain w-full h-full p-12"
@@ -224,8 +224,8 @@ export default function Home() {
           <div className="grid gap-8 lg:grid-cols-3">
             <div className="space-y-4">
               <div className="flex items-center gap-2">
-                <Image src="/images/without-bg.png" alt="Aurora Labs Logo" width={32} height={32} />
-                <span className="text-lg font-bold text-aurora">Aurora Labs</span>
+                <Image src="/images/without-bg.png" alt="Auroral Labs Logo" width={32} height={32} />
+                <span className="text-lg font-bold text-aurora">Auroral Labs</span>
               </div>
               <p className="text-sm text-gray-500 dark:text-gray-400">
                 Enhancing pet lives through innovative technology.
@@ -298,7 +298,7 @@ export default function Home() {
             </div>
           </div>
           <div className="mt-8 border-t pt-8 text-center text-sm text-gray-500 dark:text-gray-400">
-            &copy; {new Date().getFullYear()} Aurora Labs. All rights reserved.
+            &copy; {new Date().getFullYear()} Auroral Labs. All rights reserved.
           </div>
         </div>
       </footer>

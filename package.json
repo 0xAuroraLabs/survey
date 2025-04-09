@@ -82,5 +82,21 @@
     "tailwindcss": "^3.4.17",
     "typescript": "^5.8.3",
     "vercel": "^41.5.0"
-  }
+  },
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0xAuroraLabs/survey.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/0xAuroraLabs/survey/issues"
+  },
+  "homepage": "https://github.com/0xAuroraLabs/survey#readme",
+  "description": ""
 }

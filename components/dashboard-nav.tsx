@@ -103,7 +103,7 @@ export function DashboardNav({ user }: DashboardNavProps) {
         <div className="w-12 h-12">
           <Image 
             src="/images/without-bg.png" 
-            alt="Aurora Labs Logo" 
+            alt="Auroral Labs Logo" 
             width={48} 
             height={48}
             className="w-full h-full"
@@ -148,7 +148,7 @@ export function DashboardNav({ user }: DashboardNavProps) {
       </nav>
       <div className="mt-auto p-4">
         <div className="rounded-lg bg-muted p-3">
-          <h3 className="text-sm font-medium">Aurora Labs</h3>
+          <h3 className="text-sm font-medium">Auroral Labs</h3>
           <p className="text-xs text-muted-foreground mt-1">Enhancing pet lives through innovative technology</p>
         </div>
       </div>

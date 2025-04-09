@@ -17,11 +17,11 @@ export default function AdminLoginPage() {
         <div className="flex items-center gap-2">
           <Image 
             src="/images/without-bg.png" 
-            alt="Aurora Labs Logo" 
+            alt="Auroral Labs Logo" 
             width={32} 
             height={32} 
           />
-          <h1 className="text-xl font-semibold">Aurora Labs Admin</h1>
+          <h1 className="text-xl font-semibold">Auroral Labs Admin</h1>
         </div>
       </Link>
 

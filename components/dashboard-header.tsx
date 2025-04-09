@@ -32,13 +32,13 @@ export function DashboardHeader({ user }: DashboardHeaderProps) {
             <div className="w-10 h-10">
               <Image 
                 src="/images/without-bg.png" 
-                alt="Aurora Labs Logo" 
+                alt="Auroral Labs Logo" 
                 width={40} 
                 height={40}
                 className="w-full h-full"
               />
             </div>
-            <span className="font-bold text-aurora">Aurora Labs</span>
+            <span className="font-bold text-aurora">Auroral Labs</span>
           </a>
           <nav className="flex items-center space-x-6 text-sm font-medium">
             <div 

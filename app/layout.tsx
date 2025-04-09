@@ -9,7 +9,7 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "Aurora Labs - Pet Device Referral Program",
+  title: "Auroral Labs - Pet Device Referral Program",
   description: "Enhancing pet care through innovative technology",
   icons: {
     icon: "/images/without-bg.png",
