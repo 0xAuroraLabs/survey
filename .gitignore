@@ -34,7 +34,17 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-.vercel
+
+# Firebase
+/.firebase/
+firebase-debug.log
+.firebase-emulator-data/
+
+# Build caches
+**/.next/cache/
+**/webpack/
+**/cache/
+**/*.pack
 
 # Vercel
 .vercel
